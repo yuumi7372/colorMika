@@ -1,0 +1,14 @@
+.a{
+  height: 100px;
+  background-color: brown;
+}
+.colors{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.colors > div{
+  height: 250px;
+  width: 100px;
+  background-color: brown;
+}
