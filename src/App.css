@@ -1,14 +1,20 @@
-.a{
-  height: 100px;
-  background-color: brown;
-}
+
 .colors{
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.colors > div{
+.colors .plate > div{
   height: 250px;
   width: 100px;
   background-color: brown;
+}
+
+.plate > input {
+  display: block;
+  margin: 0px 2px;
+}
+label{
+  display: block;
+  margin-top: 10px;
 }
