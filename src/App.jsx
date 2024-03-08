@@ -40,7 +40,7 @@ const [hex, setHex]=useState({
   a:"#000000",b:"#000000",c:"#000000",d:"#000000",e:"#000000"
 })
 const openai = new OpenAI({
-  apiKey:"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",
+  apiKey:"",
   dangerouslyAllowBrowser: true
 });
 
