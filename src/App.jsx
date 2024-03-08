@@ -4,6 +4,7 @@ import Read from './components/Read'
 import { useEffect, useState } from "react";
 import Showcolor from "./components/Showcolor";
 import hslToHex from "hsl-to-hex";
+import Header from "./components/Header";
 
 function App() {
   let res = ""
@@ -39,7 +40,7 @@ const [hex, setHex]=useState({
   a:"#000000",b:"#000000",c:"#000000",d:"#000000",e:"#000000"
 })
 const openai = new OpenAI({
-  apiKey:"",
+  apiKey:"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",
   dangerouslyAllowBrowser: true
 });
 
@@ -113,8 +114,9 @@ async function searchColor(content) {
 
   return (
     <>
-     <Read searchColor={searchColor} obj={obj}  />
+    <Header />
      <Showcolor obj={obj}mika={mika}setMika={setMika} setcolor={ setcolor } hex={hex} />
+     <Read searchColor={searchColor} obj={obj}  />
     </>
   )
 }
